@@ -8,9 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.client.reactive.ClientHttpConnector;
 import org.springframework.http.client.reactive.ClientHttpRequest;
 import org.springframework.http.client.reactive.ClientHttpResponse;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
@@ -24,8 +22,10 @@ public class TestController {
 
     private static int count = 1;
 
-    @RequestMapping(value = "/v1/test", method = RequestMethod.POST)
-    public Mono<TestEntity> test() throws InterruptedException {
+    @RequestMapping(value = "/v1/reactive", method = RequestMethod.POST)
+    public Mono<TestEntity> reactive(@RequestBody TestEntity testEntity) throws InterruptedException {
+
+        log.info("Start with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
 
         if (count % 2 == 0) {
             log.info("counter {}",count);
@@ -36,26 +36,36 @@ public class TestController {
 
         log.info("new counter {}",count);
 
+        log.info("End with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+
         return Mono.just(TestEntity
                     .builder()
-                    .id(count + "")
-                    .name("Martin")
+                    .id(testEntity.getId())
+                    .name(testEntity.getName())
                     .build()).log();
     }
 
-//    @RequestMapping(value = "/v1/test", method = RequestMethod.POST)
-//    public Mono<ServerResponse> test() {
-//
-//        return ServerResponse.ok()
-//                .contentType(MediaType.APPLICATION_JSON)
-//                .bodyValue(
-//                    TestEntity
-//                            .builder()
-//                            .id("1")
-//                            .name("Martin")
-//                            .build()
-//                )
-//                .log();
-//    }
+    @RequestMapping(value = "/v1/blocking", method = RequestMethod.POST)
+    public TestEntity blocking(@RequestBody TestEntity testEntity) throws InterruptedException {
+
+        log.info("Start with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+
+        if (count % 2 == 0) {
+            log.info("counter {}",count);
+            Thread.sleep(5000);
+        }
+
+        count++;
+
+        log.info("new counter {}",count);
+
+        log.info("End with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+
+        return TestEntity
+                .builder()
+                .id(testEntity.getId())
+                .name(testEntity.getName())
+                .build();
+    }
 }
 
