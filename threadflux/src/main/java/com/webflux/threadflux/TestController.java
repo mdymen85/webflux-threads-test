@@ -25,7 +25,7 @@ public class TestController {
     @RequestMapping(value = "/v1/reactive", method = RequestMethod.POST)
     public Mono<TestEntity> reactive(@RequestBody TestEntity testEntity) throws InterruptedException {
 
-        log.info("Start with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+        log.info("Thread {} Start with request body {}", Thread.currentThread().getName(), testEntity.getName());
 
         if (count % 2 == 0) {
             log.info("counter {}",count);
@@ -36,7 +36,7 @@ public class TestController {
 
         log.info("new counter {}",count);
 
-        log.info("End with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+        log.info(" Thread {} = End with request body {}", Thread.currentThread().getName(), testEntity.getName());
 
         return Mono.just(TestEntity
                     .builder()
@@ -48,7 +48,7 @@ public class TestController {
     @RequestMapping(value = "/v1/blocking", method = RequestMethod.POST)
     public TestEntity blocking(@RequestBody TestEntity testEntity) throws InterruptedException {
 
-        log.info("Start with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+        log.info("Thread {} Start with request body {}", Thread.currentThread().getName(), testEntity.getName());
 
         if (count % 2 == 0) {
             log.info("counter {}",count);
@@ -59,7 +59,7 @@ public class TestController {
 
         log.info("new counter {}",count);
 
-        log.info("End with request body {} in Thread {}", testEntity.getName(), Thread.currentThread().getName());
+        log.info(" Thread {} = End with request body {}", Thread.currentThread().getName(), testEntity.getName());
 
         return TestEntity
                 .builder()

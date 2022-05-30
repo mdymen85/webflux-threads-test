@@ -1,0 +1,195 @@
+CLIENT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2022-05-29 22:35:54.417  INFO 731604 --- [           main] c.w.clientflux.ClientfluxApplication     : Starting ClientfluxApplication using Java 17.0.3 on cp1821 with PID 731604 (/home/mtuser/Projetos/pocs/git/webflux-threads-test/clientflux/target/classes started by mtuser in /home/mtuser/Projetos/pocs/git/gRPC/grpcproducer)
+2022-05-29 22:35:54.419  INFO 731604 --- [           main] c.w.clientflux.ClientfluxApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-05-29 22:35:55.099  INFO 731604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-29 22:35:55.105  INFO 731604 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-29 22:35:55.105  INFO 731604 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-29 22:35:55.165  INFO 731604 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-29 22:35:55.166  INFO 731604 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
+2022-05-29 22:35:55.191  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 2 Name Reference Handler State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.191  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 25 Name Catalina-utility-2 State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 26 Name container-0 State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 16 Name RMI TCP Accept-0 State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 14 Name Notification Thread State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 3 Name Finalizer State WAITING Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 13 Name Monitor Ctrl-Break State RUNNABLE Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 24 Name Catalina-utility-1 State WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 21 Name RMI TCP Connection(1)-127.0.0.1 State RUNNABLE Thread Group java.lang.ThreadGroup[name=RMI Runtime,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 1 Name main State RUNNABLE Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 12 Name Common-Cleaner State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=InnocuousThreadGroup,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 4 Name Signal Dispatcher State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 22 Name RMI Scheduler(0) State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.192  INFO 731604 --- [           main] com.webflux.clientflux.TestController    : Thread 20 Name Attach Listener State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:35:55.392  INFO 731604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-29 22:35:55.400  INFO 731604 --- [           main] c.w.clientflux.ClientfluxApplication     : Started ClientfluxApplication in 1.216 seconds (JVM running for 1.588)
+2022-05-29 22:36:00.466  INFO 731604 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-29 22:36:00.466  INFO 731604 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-29 22:36:00.466  INFO 731604 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-29 22:36:00.517  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 1
+2022-05-29 22:36:00.538  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.1                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.539  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.1                   : | request(unbounded)
+2022-05-29 22:36:00.633  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 1 with response null
+2022-05-29 22:36:00.633  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 2
+2022-05-29 22:36:00.633  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.2                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.633  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.2                   : | request(unbounded)
+2022-05-29 22:36:00.634  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 2 with response MonoLogFuseable
+2022-05-29 22:36:00.634  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 3
+2022-05-29 22:36:00.634  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.3                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.634  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.3                   : | request(unbounded)
+2022-05-29 22:36:00.635  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 3 with response MonoLogFuseable
+2022-05-29 22:36:00.635  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 4
+2022-05-29 22:36:00.636  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.4                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.636  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.4                   : | request(unbounded)
+2022-05-29 22:36:00.636  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 4 with response MonoLogFuseable
+2022-05-29 22:36:00.636  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 5
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.5                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.5                   : | request(unbounded)
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 5 with response MonoLogFuseable
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 6
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.6                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.637  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.6                   : | request(unbounded)
+2022-05-29 22:36:00.638  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 6 with response MonoLogFuseable
+2022-05-29 22:36:00.638  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 7
+2022-05-29 22:36:00.638  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.7                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.638  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.7                   : | request(unbounded)
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 7 with response MonoLogFuseable
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 8
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.8                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.8                   : | request(unbounded)
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 8 with response MonoLogFuseable
+2022-05-29 22:36:00.639  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 9
+2022-05-29 22:36:00.640  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.9                   : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.640  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.9                   : | request(unbounded)
+2022-05-29 22:36:00.643  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 9 with response MonoLogFuseable
+2022-05-29 22:36:00.643  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Start Thread http-nio-8082-exec-1 i 10
+2022-05-29 22:36:00.643  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.10                  : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.643  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.10                  : | request(unbounded)
+2022-05-29 22:36:00.644  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : End Thread http-nio-8082-exec-1 i 10 with response MonoLogFuseable
+2022-05-29 22:36:00.644  INFO 731604 --- [nio-8082-exec-1] com.webflux.clientflux.TestController    : Total time = 0
+2022-05-29 22:36:00.644  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.10                  : | onSubscribe([Fuseable] MonoFlatMap.FlatMapMain)
+2022-05-29 22:36:00.644  INFO 731604 --- [nio-8082-exec-1] reactor.Mono.FlatMap.10                  : | request(unbounded)
+2022-05-29 22:36:00.764  INFO 731604 --- [or-http-epoll-6] reactor.Mono.FlatMap.5                   : | onNext(TestEntity(id=4, name=Name IT: 4))
+Total time = 0
+2022-05-29 22:36:00.765  INFO 731604 --- [or-http-epoll-6] reactor.Mono.FlatMap.5                   : | onComplete()
+2022-05-29 22:36:05.739  INFO 731604 --- [or-http-epoll-7] reactor.Mono.FlatMap.6                   : | onNext(TestEntity(id=5, name=Name IT: 5))
+Total time = 5
+2022-05-29 22:36:05.740  INFO 731604 --- [or-http-epoll-7] reactor.Mono.FlatMap.6                   : | onComplete()
+2022-05-29 22:36:05.740  INFO 731604 --- [or-http-epoll-5] reactor.Mono.FlatMap.4                   : | onNext(TestEntity(id=3, name=Name IT: 3))
+Total time = 5
+2022-05-29 22:36:05.740  INFO 731604 --- [or-http-epoll-5] reactor.Mono.FlatMap.4                   : | onComplete()
+2022-05-29 22:36:05.741  INFO 731604 --- [or-http-epoll-2] reactor.Mono.FlatMap.1                   : | onNext(TestEntity(id=0, name=Name IT: 0))
+Total time = 5
+2022-05-29 22:36:05.742  INFO 731604 --- [or-http-epoll-2] reactor.Mono.FlatMap.1                   : | onComplete()
+2022-05-29 22:36:05.739  INFO 731604 --- [or-http-epoll-1] reactor.Mono.FlatMap.8                   : | onNext(TestEntity(id=7, name=Name IT: 7))
+Total time = 5
+2022-05-29 22:36:05.742  INFO 731604 --- [or-http-epoll-3] reactor.Mono.FlatMap.2                   : | onNext(TestEntity(id=1, name=Name IT: 1))
+2022-05-29 22:36:05.742  INFO 731604 --- [or-http-epoll-8] reactor.Mono.FlatMap.7                   : | onNext(TestEntity(id=6, name=Name IT: 6))
+Total time = 5
+Total time = 5
+2022-05-29 22:36:05.743  INFO 731604 --- [or-http-epoll-3] reactor.Mono.FlatMap.2                   : | onComplete()
+2022-05-29 22:36:05.743  INFO 731604 --- [or-http-epoll-8] reactor.Mono.FlatMap.7                   : | onComplete()
+2022-05-29 22:36:05.742  INFO 731604 --- [or-http-epoll-1] reactor.Mono.FlatMap.8                   : | onComplete()
+2022-05-29 22:36:05.744  INFO 731604 --- [or-http-epoll-4] reactor.Mono.FlatMap.3                   : | onNext(TestEntity(id=2, name=Name IT: 2))
+Total time = 5
+2022-05-29 22:36:05.744  INFO 731604 --- [or-http-epoll-4] reactor.Mono.FlatMap.3                   : | onComplete()
+2022-05-29 22:36:05.744  INFO 731604 --- [or-http-epoll-3] reactor.Mono.FlatMap.10                  : | onNext(TestEntity(id=9, name=Name IT: 9))
+Total time = 5
+2022-05-29 22:36:05.744  INFO 731604 --- [or-http-epoll-3] reactor.Mono.FlatMap.10                  : | onComplete()
+2022-05-29 22:36:05.745  INFO 731604 --- [or-http-epoll-2] reactor.Mono.FlatMap.9                   : | onNext(TestEntity(id=8, name=Name IT: 8))
+Total time = 5
+2022-05-29 22:36:05.745  INFO 731604 --- [or-http-epoll-2] reactor.Mono.FlatMap.9                   : | onComplete()
+2022-05-29 22:36:05.746  INFO 731604 --- [or-http-epoll-4] reactor.Mono.FlatMap.10                  : | onNext(TestEntity(id=9, name=Name IT: 9))
+2022-05-29 22:36:05.746  INFO 731604 --- [or-http-epoll-4] reactor.Mono.FlatMap.10                  : | onComplete()
+
+
+
+SERVER
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2022-05-29 22:34:46.564  INFO 731253 --- [           main] c.w.tomcatblock.TomcatblockApplication   : Starting TomcatblockApplication using Java 17.0.3 on cp1821 with PID 731253 (/home/mtuser/Projetos/pocs/git/webflux-threads-test/tomcatblock/target/classes started by mtuser in /home/mtuser/Projetos/pocs/git/gRPC/grpcproducer)
+2022-05-29 22:34:46.566  INFO 731253 --- [           main] c.w.tomcatblock.TomcatblockApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-29 22:34:47.271  INFO 731253 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-05-29 22:34:47.275  INFO 731253 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-29 22:34:47.276  INFO 731253 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-29 22:34:47.330  INFO 731253 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-29 22:34:47.331  INFO 731253 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2022-05-29 22:34:47.356  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 20 Name Attach Listener State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.356  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 16 Name RMI TCP Accept-0 State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 22 Name RMI Scheduler(0) State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 24 Name Catalina-utility-1 State WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 26 Name container-0 State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 13 Name Monitor Ctrl-Break State RUNNABLE Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 25 Name Catalina-utility-2 State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 3 Name Finalizer State WAITING Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 14 Name Notification Thread State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 1 Name main State RUNNABLE Thread Group java.lang.ThreadGroup[name=main,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 12 Name Common-Cleaner State TIMED_WAITING Thread Group java.lang.ThreadGroup[name=InnocuousThreadGroup,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 4 Name Signal Dispatcher State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 2 Name Reference Handler State RUNNABLE Thread Group java.lang.ThreadGroup[name=system,maxpri=10]
+2022-05-29 22:34:47.357  INFO 731253 --- [           main] com.webflux.tomcatblock.TestController   : Thread 21 Name RMI TCP Connection(1)-127.0.0.1 State RUNNABLE Thread Group java.lang.ThreadGroup[name=RMI Runtime,maxpri=10]
+2022-05-29 22:34:47.584  INFO 731253 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-05-29 22:34:47.593  INFO 731253 --- [           main] c.w.tomcatblock.TomcatblockApplication   : Started TomcatblockApplication in 1.244 seconds (JVM running for 1.628)
+2022-05-29 22:34:50.042  INFO 731253 --- [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-29 22:34:50.042  INFO 731253 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-29 22:34:50.043  INFO 731253 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-7] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-7 Start with request body Name IT: 6
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-6] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-6 Start with request body Name IT: 5
+2022-05-29 22:34:50.090  INFO 731253 --- [io-8083-exec-11] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-11 Start with request body Name IT: 8
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-5] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-5 Start with request body Name IT: 4
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-7] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-3] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-3 Start with request body Name IT: 0
+2022-05-29 22:34:50.090  INFO 731253 --- [io-8083-exec-10] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-10 Start with request body Name IT: 9
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-4] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-4 Start with request body Name IT: 2
+2022-05-29 22:34:50.090  INFO 731253 --- [io-8083-exec-10] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-6] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-3] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-4] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [io-8083-exec-11] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-1] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-1 Start with request body Name IT: 3
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-1] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-8] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-8 Start with request body Name IT: 7
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-5] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-9] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-9 Start with request body Name IT: 9
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-8] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-9] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:50.090  INFO 731253 --- [nio-8083-exec-2] com.webflux.tomcatblock.TestController   : Thread http-nio-8083-exec-2 Start with request body Name IT: 1
+2022-05-29 22:34:50.091  INFO 731253 --- [nio-8083-exec-2] com.webflux.tomcatblock.TestController   : counter 0
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-4] com.webflux.tomcatblock.TestController   : new counter 5
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-1] com.webflux.tomcatblock.TestController   : new counter 7
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-6] com.webflux.tomcatblock.TestController   : new counter 4
+2022-05-29 22:34:55.091  INFO 731253 --- [io-8083-exec-11] com.webflux.tomcatblock.TestController   : new counter 6
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-1] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-1 = End with request body Name IT: 3
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-5] com.webflux.tomcatblock.TestController   : new counter 8
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-7] com.webflux.tomcatblock.TestController   : new counter 1
+2022-05-29 22:34:55.091  INFO 731253 --- [nio-8083-exec-3] com.webflux.tomcatblock.TestController   : new counter 3
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-5] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-5 = End with request body Name IT: 4
+2022-05-29 22:34:55.091  INFO 731253 --- [io-8083-exec-10] com.webflux.tomcatblock.TestController   : new counter 2
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-7] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-7 = End with request body Name IT: 6
+2022-05-29 22:34:55.093  INFO 731253 --- [io-8083-exec-10] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-10 = End with request body Name IT: 9
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-3] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-3 = End with request body Name IT: 0
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-2] com.webflux.tomcatblock.TestController   : new counter 11
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-4] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-4 = End with request body Name IT: 2
+2022-05-29 22:34:55.092  INFO 731253 --- [io-8083-exec-11] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-11 = End with request body Name IT: 8
+2022-05-29 22:34:55.094  INFO 731253 --- [nio-8083-exec-2] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-2 = End with request body Name IT: 1
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-8] com.webflux.tomcatblock.TestController   : new counter 10
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-9] com.webflux.tomcatblock.TestController   : new counter 9
+2022-05-29 22:34:55.092  INFO 731253 --- [nio-8083-exec-6] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-6 = End with request body Name IT: 5
+2022-05-29 22:34:55.096  INFO 731253 --- [nio-8083-exec-8] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-8 = End with request body Name IT: 7
+2022-05-29 22:34:55.096  INFO 731253 --- [nio-8083-exec-9] com.webflux.tomcatblock.TestController   :  Thread http-nio-8083-exec-9 = End with request body Name IT: 9
+
