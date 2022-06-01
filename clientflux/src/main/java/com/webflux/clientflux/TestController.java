@@ -10,13 +10,19 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.PostConstruct;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
 @Slf4j
 public class TestController {
+
+    @RequestMapping(value = "/v1/error", method = RequestMethod.POST)
+    public String testError() {
+        return ResourceBundle.getBundle("error_messages").getString("ERROR-1");
+    }
 
     private void showThreads() {
         var threads = Thread.getAllStackTraces()
@@ -141,7 +147,9 @@ public class TestController {
                     .bodyToMono(TestEntity.class)
                     .log();
 
-            response.subscribe(j -> System.out.println("Total time = " + this.toMinutos(init)));
+            response.subscribe(
+                    j -> System.out.println("Total time = " + this.toMinutos(init))
+            );
 
             log.info("End Thread {} i {} with response {}", Thread.currentThread().getName(), i+1, resp);
 
